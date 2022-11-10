@@ -1,10 +1,10 @@
 # 100HoursProject
-I am developing a Korean Language Learning Web App as part of my work with #100Devs. With this app, users can create a login to read and watch Korean stories and articles, complete grammar and vocabulary exercises, and save useful vocabulary to their vocab list.
+I am developing a Korean Language Learning Web App as part of my work with #100Devs. With this app, users login with a Google account to read and watch Korean stories and articles, complete grammar and vocabulary exercises, and save useful vocabulary to their vocab list.
 
 # How It's Made
-<strong>Tech used:</strong> Bootstrap, Materialize, Express, Mongoose/MongoDB
+<strong>Tech used:</strong> Materialize, Express, Mongoose/MongoDB
 
-I used Bootstrap and Materialize for styling, and JavaScript for behavioral actions. For the backend of the application, I am using MongoDB, Express, Handlebars, and Node, with plans to add in React in the near future. 
+I used Materialize for styling, and JavaScript for behavioral actions. For the backend of the application, I am using MongoDB, Express, Handlebars, and Node, with plans to add in React in the near future. 
 
 # Optimizations
 While I am still working on the base of this web app, there are already features and tools I would like to add in the future to help advance users' Korean language learning journey.
