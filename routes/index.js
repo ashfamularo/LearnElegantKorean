@@ -21,9 +21,10 @@ router.get('/', ensureGuest, (req, res) => {
 // })
 router.get('/dashboard', ensureAuth, async (req, res) => {
   try {
-    const articles = await Article.find({ user: req.user.id }).lean()
+    const articles = await Article.find({status: 'public'}).lean()
     res.render('dashboard', {
       layout: 'dashboard',
+      name: req.user.firstName,
       articles
     })
   } catch (err) {
