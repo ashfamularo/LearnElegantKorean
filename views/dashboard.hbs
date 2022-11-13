@@ -1,18 +1,18 @@
 <div class="container">
-<h1>Hello {{name}}, this is your dashboard</h1>
-</div>
+  <h1 class="fancy-font">Hello {{name}}, this is your dashboard.</h1>
 {{#if articles}}
-<p>Here are the articles you can learn from</p>
-<div class="container">
-  {{#each articles}}
-  <div class="card">
-    <div class="card-content">
-      <span class="card-title"><a href="/articles/{{_id}}">{{title}}</a></span>
-      Card Content Goes Here
-    </div>
-  </div>
-  {{/each}}
-  {{else}}
+  <p>Here are the articles you can learn from.</p>
+    <div class="card-deck">
+    {{#each articles}}
+      <div class="card bg-primary text-white mb-3">
+        <div class="card-body">
+          <h4 class="card-title"><a class="text-white text-decoration-none" href="/articles/{{_id}}">{{title}}</a></h4>
+          <p class="card-text">{{engTitle}}</p>
+        </div>
+      </div>
+    {{/each}}
+{{else}}
   <p>There are no articles available at this time.</p>
 {{/if}}
+  </div>
 </div>

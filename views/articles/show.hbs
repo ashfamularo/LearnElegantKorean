@@ -1,0 +1,51 @@
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-6">
+  <h3>{{article.title}}
+  </h3>
+  <h4>{{article.engTitle}}</h4>
+    <div class="card">
+      <div class="card-content">
+        {{{article.body}}}
+      </div>
+    </div>
+    </div>
+      <div class="col-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Korean</th>
+              <th>English</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each article.vocabulary.korean}}
+            <tr>
+              <td>{{this}}</td>
+              {{/each}}
+              {{#each article.vocabulary.english}}
+              <td>{{this}}</td>
+              {{/each}}
+            </tr>
+          </tbody>
+        </table>
+            <h3>Vocab List</h3>
+            <div class="container">
+              <div class="row">
+              <div class="col-6">
+                <ul>{{#each article.vocabulary.korean}}
+                  <li class="border-bottom border-primary">{{this}}</li>
+                  {{/each}}
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>{{#each article.vocabulary.english}}
+                  <li class=" border-bottom border-primary">{{this}}</li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+            </div>
+    </div>
+  </div>
+</div>
